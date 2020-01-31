@@ -35,7 +35,7 @@ public class StandaloneHibernate {
 		propertiesHibernateConfiguration.put("hibernate.connection.username", "postgres");
 		propertiesHibernateConfiguration.put("hibernate.connection.password", "password");
 		propertiesHibernateConfiguration.put("hibernate.connection.url",
-				"jdbc:postgresql://localhost:5432/hibernateTutorials");
+				"jdbc:postgresql://postgres:5432/hibernateTutorials");
 		propertiesHibernateConfiguration.put("hibernate.connection_pool_size", "1");
 		propertiesHibernateConfiguration.put("hibernate.show_sql", "true");
 		propertiesHibernateConfiguration.put("hibernate.hbm2ddl.auto", "update");
@@ -62,7 +62,7 @@ public class StandaloneHibernate {
 		DriverManagerDataSource managerDataSource = new DriverManagerDataSource();
 
 		managerDataSource.setDriverClass("org.postgresql.Driver");
-		managerDataSource.setJdbcUrl("jdbc:postgresql://localhost:5432/hibernateTutorials");
+		managerDataSource.setJdbcUrl("jdbc:postgresql://postgres:5432/hibernateTutorials");
 		managerDataSource.setUser("postgres");
 		managerDataSource.setPassword("password");
 

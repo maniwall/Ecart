@@ -1,2 +1,4 @@
+com\ecart\model\CounterModel.class
 com\ecart\controller\EcartController.class
+com\ecart\hibernate\standalone\config\StandaloneHibernate.class
 com\ecart\EcartApplicationInitializer.class
